@@ -34,7 +34,7 @@ A modern full-stack blog application for sports enthusiasts to share their stori
 ```bash
 cd backend
 npm install
-npm run dev
+node app.js
  Frontend Setup
 cd frontend
 npm install
