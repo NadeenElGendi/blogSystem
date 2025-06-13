@@ -5,7 +5,6 @@ import {
   FaUser,
   FaPlus,
   FaHome,
-  FaUserCircle,
 } from "react-icons/fa";
 import { useAuth } from "../context/AuthContext";
 import { toast } from "react-toastify";
@@ -40,7 +39,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2 px-2">
               <div className="avatar placeholder">
                 <div className="bg-white text-blue-500 rounded-full p-3">
-                 <FaUser/>
+                  <FaUser />
                 </div>
               </div>
               <span className="font-medium hidden md:inline">
