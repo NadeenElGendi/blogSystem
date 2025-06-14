@@ -6,7 +6,7 @@ import AddPost from "./pages/AddPost";
 import Navbar from "./components/Navbar";
 import { AuthProvider } from "./context/AuthContext";
 import EditPost from "./pages/EditPost";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 
 
 

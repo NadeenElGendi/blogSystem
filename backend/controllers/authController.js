@@ -3,7 +3,7 @@ const { sign } = pkg;
 import User from "../models/users.js";
 import { validationResult } from "express-validator";
 
-// ✅ Register
+//  Register
 export async function register(req, res) {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -37,7 +37,7 @@ export async function register(req, res) {
   }
 }
 
-// ✅ Login
+//  Login
 export async function login(req, res) {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -73,7 +73,7 @@ export async function login(req, res) {
   }
 }
 
-// ✅ Get User
+//  Get User
 export async function getUser(req, res) {
   try {
     const user = await User.findById(req.user.id).select("-password");

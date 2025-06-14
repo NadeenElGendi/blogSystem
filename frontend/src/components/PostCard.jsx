@@ -5,12 +5,12 @@ const PostCard = ({ post, isAuthor, onDelete }) => {
   return (
     <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
       <div className="card-body p-4">
-        {/* Post Title - First Element */}
+        {/* Post Title  */}
         <h2 className="card-title text-2xl font-bold mb-2 text-blue-900">
           {post.title}
         </h2>
 
-        {/* Image - Second Element */}
+        {/* Image  */}
         {post.image && (
           <figure className="mb-4 rounded-lg overflow-hidden">
             <img
@@ -21,10 +21,10 @@ const PostCard = ({ post, isAuthor, onDelete }) => {
           </figure>
         )}
 
-        {/* Content - Third Element */}
+        {/* Content  */}
         <p className="text-blue-800 font-bold mb-6">{post.content}</p>
 
-        {/* Author and Date in Tag - Bottom Right */}
+        {/* Author and Date in Tag  */}
         <div className="card-actions justify-start">
           <div className="flex flex-col items-start">
             <span className="badge badge-neutral mb-1">
@@ -40,7 +40,7 @@ const PostCard = ({ post, isAuthor, onDelete }) => {
           </div>
         </div>
 
-        {/* Edit/Delete Buttons (for author) */}
+        {/* Edit/Delete Buttons  */}
         {isAuthor && (
           <div className="flex justify-end gap-2 mt-4">
             <Link
